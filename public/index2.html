@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    GRADE
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link href="assets/css/paper-dashboard.css?v=2.0.1" rel="stylesheet" />
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+
+  <!-- CSS Just for demo purpose, don't include it in your project -->
+  <link href="assets/demo/demo.css" rel="stylesheet" />
+</head>
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="orange">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo">
+        <a href="https://www.facebook.com/g.jatupat" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="assets/img/2.png">
+          </div>
+        </a>
+        <a href="https://www.facebook.com/g.jatupat" class="simple-text logo-normal">
+          Jatupat Klabklai
+        </a>
+      </div>
+      <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+          <li>
+            <a href="index1.html">
+              <i class="now-ui-icons business_badge"></i>
+              <p>PROFILE</p>
+            </a>
+          </li>
+          <li class="active ">
+            <a href="index2.html">
+              <i class="now-ui-icons education_hat"></i>
+              <p>GRADE</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-panel" id="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-transparent  bg-primary  navbar-absolute">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" href="#pablo">GPA</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <form>
+              <div class="input-group no-border">
+                <input type="text" value="" class="form-control" placeholder="Search...">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="panel-header panel-header-lg">
+        <canvas id="bigDashboardChart"></canvas>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center">
+                      <i class="nc-icon nc-ruler-pencil text-warning"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">GPA</p>
+                      <p class="card-title">3.31
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-key-25 text-success"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">Student ID</p>
+                      <p class="card-title">6104101310
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-hat-3 text-danger"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">third-year</p>
+                      <p class="card-title">junior
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="card card-stats">
+              <div class="card-body ">
+                <div class="row">
+                  <div class="col-5 col-md-4">
+                    <div class="icon-big text-center icon-warning">
+                      <i class="nc-icon nc-istanbul text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-8">
+                    <div class="numbers">
+                      <p class="card-category">University</p>
+                      <p class="card-title">Maejo
+                      <p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card ">
+              <div class="card-header ">
+                <h5 class="card-title">Skill </h5>
+              </div>
+              <hr>
+              <div class="card-body ">
+                <canvas id="chartEmail"></canvas>
+              </div>
+              <div class="card-footer ">
+                <div class="legend">
+                  <i class="fa fa-circle text-primary"></i> Computer
+                  <i class="fa fa-circle text-warning"></i> Mathematics
+                  <i class="fa fa-circle text-danger"></i> Art
+                  <i class="fa fa-circle text-gray"></i> English
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card card-chart">
+              <div class="card-header">
+                <h5 class="card-title">
+                  Life graph</h5>
+              </div>
+              <hr>
+              <div class="card-body">
+                <canvas id="speedChart" width="400" height="100"></canvas>
+              </div>
+              <div class="card-footer">
+                <div class="chart-legend">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Subject</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        ID
+                      </th>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Professor
+                      </th>
+                      <th class="text-right">
+                        Grade
+                      </th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          CS313
+                        </td>
+                        <td>
+                          Web Application Development
+                        </td>
+                        <td>
+                          อาจารย์อรรถวิท ชังคมานนท์
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          CS320
+                        </td>
+                        <td>
+                          Operating System
+                        </td>
+                        <td>
+                          อาจารย์ ดร.สมนึก สินธุปวน
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          CS323
+                        </td>
+                        <td>
+                          Cloud Computing
+                        </td>
+                        <td>
+                          ผู้ช่วยศาสตราจารย์ ดร.สนิท สิทธิ
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          CS341
+                        </td>
+                        <td>
+                          Data Science
+                        </td>
+                        <td>
+                          ผู้ช่วยศาสตราจารย์ ดร.พาสน์ ปราโมกข์ชน
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          CS343
+                        </td>
+                        <td>
+                          Object Oriented Analysisand Design
+                        </td>
+                        <td>
+                          ผู้ช่วยศาสตราจารย์ก่องกาญจน์ ดุลยไชย
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          จป412
+                        </td>
+                        <td>
+                          Environmental Impact Assessment of Aquatic Resources
+                        </td>
+                        <td>
+                          ผู้ช่วยศาสตราจารย์ ดร.ประจวบ ฉายบุ
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          ศท012
+                        </td>
+                        <td>
+                          Psychology and Human Behavior
+                        </td>
+                        <td>
+                          อาจารย์ ดร.พิณนภา หมวกยอด
+                        </td>
+                        <td class="text-right">
+                          A
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class=" container-fluid ">
+          <nav>
+            <ul>
+              CONTEAC :
+              <li>
+                <a href="https://www.facebook.com/g.jatupat">
+                  FACEBOOK
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="assets/js/core/jquery.min.js"></script>
+    <script src="assets/js/core/popper.min.js"></script>
+    <script src="assets/js/core/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <!-- Chart JS -->
+    <script src="assets/js/plugins/chartjs.min.js"></script>
+    <!-- Control Center for Now Ui Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="assets/js/now-ui-dashboard.min.js?v=1.5.0" type="text/javascript"></script>
+    <!-- Now Ui Dashboard DEMO methods, don't include it in your project! -->
+    <script src="assets/demo/demo.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Javascript method's body can be found in assets/js/demos.js
+        demo.initDashboardPageCharts();
+
+      });
+    </script>
+</body>
+
+</html>
